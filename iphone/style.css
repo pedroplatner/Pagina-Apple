@@ -1,0 +1,457 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family:sans-serif;
+
+}
+
+body{
+    background-color: #e8e6e7;
+}
+/*HEADER*/
+
+header{
+    padding: 20px 70px;
+    background-color: black;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.navigation ul{
+    display: flex;
+    gap: 60px;
+    
+}
+
+.navigation ul li a{
+    color: #888;
+    cursor: pointer;
+    font-weight: 600;
+    padding-bottom: 4px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navigation ul li a:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.navigation .check{
+    color: #fff;
+    border-bottom: 1px solid rgb(85, 184, 255);
+}
+
+#bag{
+    background-color: black;
+    border: none;
+}
+
+#bag:hover{
+    border-bottom: 1px solid white;
+}
+/*MAIN-------------------------------------------------------------------------*/
+
+main section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+}
+
+.main-text img{
+    width: 15rem;
+    margin-bottom: 3vh;
+}
+
+.main-text h3{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.main-text p{
+    margin-bottom: 1.5rem;
+}
+
+.main-text h6{
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.main-text .btn{
+    padding: 10px 25PX;
+    background: #0071e3;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+
+.main-text .btn:hover{
+    opacity: .85;
+}
+
+.main-text .text h5{
+    font-size: 1rem;
+    color: #444;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.main-text .content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-text .content span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 1px 1px #888;
+    transition: all 0.5s;
+}
+
+.main-text .content span:hover{
+    opacity: .80;
+}
+
+#green{
+    background-color: #384937;
+}
+#pink{
+    background-color: #f8ddd6;
+}
+#blue{
+    background-color: #225f7e;
+}
+#black{
+    background-color: black;
+}
+#white{
+    background-color: white;
+}
+#red{
+    background-color: rgb(255, 0, 0);
+}
+
+.main-img{
+    transition: all 1s ease;
+    z-index: 100;
+}
+
+.main-img img{
+    width: 500px;
+    transform: rotate(-7deg);
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #445c42;
+    clip-path: circle(800px at right 1000px);
+}
+/*FIM DO MAIN-------------------------------------------------------------------------*/
+
+/*MOBILE*/
+
+#mobile_btn{
+    display: none;
+    cursor: pointer;
+}
+
+#mobile_menu{
+    display: none;
+}
+
+.hidden {
+    display: none; /* Classe para esconder */
+}
+
+@media screen and (max-width: 1170px) {
+    .navigation{
+        display: none;
+    }
+
+    #mobile_btn{
+        display: block ;
+        width: 40px;
+        height: 40px;
+    }
+    .circle{
+        display: none;
+    }
+
+    .main-text {
+        width: 100%;
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .main-text .content {
+        display: flex;
+        justify-content: center; /* Centraliza os spans */
+        flex-wrap: wrap; /* Permite que o conteúdo se organize melhor em telas menores */
+    }
+
+    .main-img {
+        display: block; /* Garante que a imagem fique como bloco */
+        margin: 20px auto; /* Centraliza a imagem e adiciona um espaço em cima */
+        width: 100%; /* A imagem ocupa toda a largura disponível */
+        max-width: 500px; /* Limita o tamanho máximo da imagem */
+    }
+
+    main section {
+        flex-direction: column; /* Alinha a imagem e o texto verticalmente */
+        align-items: center; /* Garante que tudo fique centralizado */
+    }
+
+    .main-img img{
+        transform: rotate(0deg);
+    }
+
+    #mobile_menu.active{
+        display: block;
+    }
+
+    .navigation{  
+        display: none;  
+    }  
+
+    #mobile_btn{  
+        display: block;  
+    }  
+
+    #btn{  
+        display: flex;  
+        justify-content: end;  
+    }  
+
+    #mobile_btn{  
+        width: 30px;  
+        height: 30px;  
+        cursor: pointer;  
+    }  
+
+    #mobile_menu {  
+        display: none; /* O menu está oculto por padrão */  
+        background-color: #000000; /* Cor de fundo opcional */  
+        padding: 10px; /* Preenchimento opcional */  
+    }  
+
+    #mobile_menu.show {  
+        display: block; /* Exibe o menu quando a classe 'show' é adicionada */  
+    }  
+
+    #mobile_menu ul{
+        display: block;
+        gap: 60px;
+    
+    }
+    
+    #mobile_menu ul li a{
+        display: flex;
+        color: #888;
+        cursor: pointer;
+        font-weight: 600;
+        padding-bottom: 4px;
+        transition: all 0.5s ease-in-out;
+        align-items: center;
+        justify-content: center;
+        padding: 10px
+    }
+    
+    #mobile_menu ul li a:hover{
+        color: white;
+        border-bottom: 1px solid white;
+    }
+}
+
+
+
+
+#btn{
+    display:flex;
+    justify-content: end;
+}
+
+@media screen and (max-width: 428px) {
+    header {
+        padding: 10px 20px; /* Mantém o padding reduzido */
+    }
+
+    .navigation {
+        display: none; /* Esconde a navegação */
+    }
+
+    #mobile_btn {
+        display: block;
+        width: 30px; /* Botão mobile menor */
+        height: 30px;
+    }
+
+    main section {
+        padding: 2rem 1rem; /* Reduz o padding em torno do conteúdo */
+        flex-direction: column; /* Organiza o conteúdo verticalmente */
+        align-items: center;
+    }
+
+    .main-text h3 {
+        font-size: 2rem; /* Tamanho de fonte menor */
+        margin-bottom: 1rem;
+    }
+
+    .main-text p {
+        font-size: 1rem; /* Fonte ajustada */
+        margin-bottom: 1rem;
+    }
+
+    .main-text h6 {
+        font-size: 0.9rem; /* Fonte ajustada */
+        margin-bottom: 1.5rem;
+    }
+
+    .main-text .btn {
+        font-size: 1.2rem; /* Botão "Comprar" ajustado */
+        padding: 8px 20px;
+    }
+
+    .main-text .content {
+        display: flex;
+        justify-content: center; /* Centraliza os spans */
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .main-img {
+        width: 100%; /* A imagem agora ocupa 100% da largura */
+        max-width: 100%; /* Não restringe o tamanho máximo */
+        height: auto; /* Mantém a proporção da imagem */
+        margin: 20px auto; /* Centraliza a imagem com um espaçamento acima */
+    }
+
+    img {
+        max-width: 100%; /* Garante que a imagem nunca ultrapasse a largura da tela */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
+
+@media screen and (max-width: 800px){  
+    .navigation{  
+        display: none;  
+    }  
+
+    #mobile_btn{  
+        display: block;  
+    }  
+
+    #btn{  
+        display: flex;  
+        justify-content: end;  
+    }  
+
+    #mobile_btn{  
+        width: 30px;  
+        height: 30px;  
+        cursor: pointer;  
+    }  
+
+    #mobile_menu {  
+        display: none; /* O menu está oculto por padrão */  
+        background-color: #000000; /* Cor de fundo opcional */  
+        padding: 10px; /* Preenchimento opcional */  
+    }  
+
+    #mobile_menu.show {  
+        display: block; /* Exibe o menu quando a classe 'show' é adicionada */  
+    }  
+
+    #mobile_menu ul{
+        display: block;
+        gap: 60px;
+    
+    }
+    
+    #mobile_menu ul li a{
+        display: flex;
+        color: #888;
+        cursor: pointer;
+        font-weight: 600;
+        padding-bottom: 4px;
+        transition: all 0.5s ease-in-out;
+        align-items: center;
+        justify-content: center;
+        padding: 10px
+    }
+    
+    #mobile_menu ul li a:hover{
+        color: white;
+        border-bottom: 1px solid white;
+    }
+}
+
+/* /* FOOTER....../ */
+
+#footer_items{
+    display: flex;
+    justify-content:space-between ;
+    padding: 0px 8% 24px 8%;
+
+}
+
+#copyright{
+    color: black;
+    font-weight:500;
+}
+
+footer{
+    background-color: #d4d4d4;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+}
+
+.social-media-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: var(--color-neutral-0);
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--color-neutral-1);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*
+
+
+
+
+

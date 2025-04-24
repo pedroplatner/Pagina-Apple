@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><!--  INICIO HEAD   -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone</title>
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="/imagens/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head><!--  FIM DA HEAD   -->
+<body>
+    <header> <!--  INICIO DO HEADER -->
+        <a href="#"><img src="/imagens/logo.png" alt="Logo do Iphone" class="logo"></a>
+
+        <div id="btn"> <!--  INICIO BOTÃO MOBILE  -->
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i> <!-- Ícone de menu (bars) -->
+            </button>
+        </div> <!--  FIM BOTÃO MOBILE  -->
+        
+        <nav class="navigation"> <!--  INICIO LISTA DA NAV  WEB  -->
+            <ul class="nav">
+                <li><a href="/iphone/index.html" class="check">Iphone</a></li>
+                <li><a href="/watch/watch.html">Watch</a></li>
+                <li><a href="#">Suporte</a></li>
+                <button id="bag">
+                    <i class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;"></i>
+                </button>
+            </ul>
+        </nav> <!-- FIM DA NAV WEB  -->
+        
+        <div id="mobile_menu"> <!-- LISTA DA NAV MOBILE  -->
+            <ul id="mobile_nav_list">
+                <li class="nav-item"><a href="/iphone/index.html">Iphone</a></li>
+                <li class="nav-item"><a href="/watch/watch.html">Watch</a></li>
+                <li class="nav-item"><a href="#">Suporte</a></li>
+            </ul>
+        </div> <!--  FIM LISTA DA NAV MOBILE  -->
+    </header> <!--  FIM DO HEADER  -->
+
+    <main> <!--  INICIO MAIN   -->
+        <section> <!-- INICIO DA SECTION IPHONE -->
+            <div class="circle"></div>
+            <div class="main-text">
+                <img src="/imagens/iphone13.png" alt="">
+                <h3>Seu novo superpoder</h3>
+                <p>Chip com velocidade impressionante.Um aumento notável na duração da bateria. E novos recursos de foto e video. <br>No iphone13, você faz coisas que nunca pôde.</p>
+                <h6>R$6.599</h6>
+                <a href="#" class="btn">Comprar</a>
+                <a href="#" class="btn">Adicionar
+                    <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                  </a>
+                <div class="text">
+                    <h5>Escolha sua cor favorita:</h5>
+                </div>
+                <div class="content">
+                    <span id="green" onclick="imgSlider('/imagens/green.png'); circlecor('#445c42')"></span>
+                    <span id="pink" onclick="imgSlider('/imagens/pink.png'); circlecor('#ffc9cf')"></span>
+                    <span id="blue" onclick="imgSlider('/imagens/blue.png'); circlecor('#0b839e')"></span>
+                    <span id="black" onclick="imgSlider('/imagens/black.png'); circlecor('#092732')"></span>
+                    <span id="white" onclick="imgSlider('/imagens/white.png'); circlecor('#898989')"></span>
+                    <span id="red" onclick="imgSlider('/imagens/red.png'); circlecor('#cf4f68')"></span>
+
+                </div>
+            </div>
+
+            <div class="main-img">
+                <img src="/imagens/green.png" alt="Imagem do Iphone" id="Phone">
+            </div>
+        </section>  <!-- FIM DA SECTION IPHONE -->
+    </main> <!--  FIM DA MAIN  -->
+
+    <footer>
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2024 Pedro Henrique
+            </span>
+    
+            <div class="social-media-buttons">
+                <a href="https://api.whatsapp.com/send/?phone=5541995352485&text&type=phone_number&app_absent=0">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+    
+                <a href="https://www.linkedin.com/in/pedroplatner/">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
